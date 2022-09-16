@@ -54,4 +54,5 @@
 .header__right > .MuiAvatar-root {
   height: 2rem;
   width: 2rem;
+  cursor: pointer;
 }

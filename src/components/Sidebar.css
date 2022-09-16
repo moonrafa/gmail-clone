@@ -1,0 +1,36 @@
+.sidebar > .sidebar__compose {
+  font-size: 0.875rem;
+  color: #001d35;
+  background-color: #c2e7ff;
+  text-transform: capitalize;
+  display: inline-flex;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  height: 3.5rem;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  min-width: 6rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 1px #0000;
+}
+.sidebar > .sidebar__compose:hover {
+  box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+  background-color: #c2e7ff;
+}
+.sidebar__footer > .label {
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem 0 1.625rem;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
+}
+.sidebar__footer > span {
+  font-size: 1rem;
+  color: #1f1f1f;
+  font-weight: bolder;
+  letter-spacing: normal;
+}
