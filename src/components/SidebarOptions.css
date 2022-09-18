@@ -17,7 +17,7 @@
 .sidebarOptions > .title {
   flex: 1;
   margin-left: 1rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 .sidebarOptions:hover > .number {
   display: inline;
@@ -25,6 +25,7 @@
 .sidebarOptions > .number {
   display: none;
   font-weight: 300;
+  font-size: 0.75rem;
 }
 .sidebarOptions:hover,
 .sidebarOptions:hover > .number,

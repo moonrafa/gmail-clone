@@ -1,5 +1,6 @@
 .app {
   height: 100vh;
+  overflow: hidden;
 }
 .app__body {
   display: flex;

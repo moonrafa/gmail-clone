@@ -8,7 +8,8 @@
 .header__left {
   margin-left: 0.5rem;
   display: flex;
-  flex: 0.19;
+  flex: 0.3;
+  max-width: 15.5rem;
   align-items: center;
 }
 .header__left > img {
@@ -19,7 +20,10 @@
   margin-left: 0.3175rem;
 }
 .header__middle {
-  flex: 0.53;
+  flex: 0.7;
+  padding-left: 1.875rem;
+  padding-right: 0.625rem;
+  max-width: 45rem;
   display: flex;
   align-items: center;
   background-color: #eaf1fb;
@@ -42,7 +46,8 @@
   display: none;
 }
 .header__right {
-  flex: 0.28;
+  flex: 0.1;
+  min-width: 24.25rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
