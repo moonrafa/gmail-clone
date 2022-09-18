@@ -1,6 +1,7 @@
 import React from 'react'
 import './Preloader.css'
-import loader from '../utils/loader.gif'
+import { LinearProgress } from '@material-ui/core'
+import logo from '../utils/googleworkspace.svg'
 
 function Preloader() {
   window.addEventListener('load', function () {
@@ -12,7 +13,8 @@ function Preloader() {
         src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
         alt="logo"
       />
-      <img src={loader} alt="loader" />
+      <LinearProgress color="secondary" />
+      <img src={logo} alt="google workspace" className="logo-google" />
     </div>
   )
 }

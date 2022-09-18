@@ -3,16 +3,25 @@ import './App.css'
 import Header from './components/Header'
 import Preloader from './components/Preloader'
 import Sidebar from './components/Sidebar'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Mail from './components/Mail'
+import EmailList from './components/EmailList'
 
 function App() {
   return (
-    <div className="app">
-      <Preloader />
-      <Header />
-      <div className="app__body">
-        <Sidebar />
+    <Router>
+      <div className="app">
+        <Preloader />
+        <Header />
+        <div className="app__body">
+          <Sidebar />
+          <Routes>
+            <Route path="/mail" element={<Mail />} />
+            <Route path="/" element={<EmailList />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   )
 }
 

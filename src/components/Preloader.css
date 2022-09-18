@@ -5,16 +5,20 @@
   right: 0;
   bottom: 0;
   background: white;
-  display: grid;
   justify-content: center;
   align-items: center;
   visibility: visible;
+  display: grid;
   z-index: 999;
   transition: all 0.2s ease-in;
+  padding: 82px 0;
 }
-
 .hide-preloader {
   display: none;
   z-index: -999;
   visibility: hidden;
+}
+.preloader > img {
+  width: 222px;
+  height: 166px;
 }
