@@ -1,6 +1,7 @@
 .emailList {
   flex: 1;
   background-color: #fff;
+  border-radius: 1rem;
   overflow: scroll;
 }
 .emailList__settings {
@@ -16,6 +17,10 @@
   width: 1.25rem !important;
   height: 1.25rem !important;
   color: #3b3b3b;
+  margin-left: 0.5rem;
+}
+.emailList__settingsLeft .PrivateSwitchBase-root-1 {
+  margin-right: -29px;
 }
 .emailList__settingsRight > span {
   font-size: 0.75rem;

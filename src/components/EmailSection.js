@@ -6,6 +6,7 @@ function EmailSection({ Icon, title, selected }) {
     <div className={`emailSection ${selected && 'emailSection--selected'}`}>
       <Icon />
       <span> {title} </span>
+      <div className="border-blue"></div>
     </div>
   )
 }

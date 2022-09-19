@@ -13,6 +13,7 @@ import SellIcon from '@material-ui/icons/LocalOffer'
 import PeopleIcon from '@material-ui/icons/People'
 import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline'
 import ForumIcon from '@material-ui/icons/Forum'
+import EmailRow from './EmailRow'
 
 function EmailList() {
   return (
@@ -53,6 +54,14 @@ function EmailList() {
         <EmailSection Icon={PeopleIcon} title="Social" />
         <EmailSection Icon={ErrorOutlineIcon} title="Updates" />
         <EmailSection Icon={ForumIcon} title="Forums" />
+      </div>
+      <div className="emailList__list">
+        <EmailRow
+          from="Nubank"
+          subject="Pagamento de fatura realizado com sucesso"
+          description="Fatura paga com sucesso Fatura paga com sucesso... "
+          time="12:39 PM"
+        />
       </div>
     </div>
   )
