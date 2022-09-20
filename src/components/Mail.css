@@ -1,0 +1,29 @@
+.mail {
+  flex: 1;
+}
+.mail__tools {
+  display: flex;
+  justify-content: space-between;
+}
+.mail__toolsLeft {
+  display: flex;
+}
+.mail__tools .MuiSvgIcon-root {
+  color: #161515;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.mail__toolsRight > span {
+  color: #5e5e5e;
+  white-space: nowrap;
+  font-size: 0.75rem;
+}
+.mr-1 {
+  padding-right: 1rem;
+}
+.br-1 {
+  border-right: 1px solid lightgray;
+}
+.ml-n {
+  margin-left: -1.5rem;
+}

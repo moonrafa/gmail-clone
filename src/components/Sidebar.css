@@ -35,7 +35,10 @@
 }
 .sidebar__footer > span {
   font-size: 1rem;
-  color: #1f1f1f;
+  color: #d36565;
   font-weight: bolder;
   letter-spacing: normal;
+}
+.sidebar__footer > .sidebarOptions > .MuiSvgIcon-root {
+  color: #474849 !important;
 }

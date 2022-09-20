@@ -1,6 +1,6 @@
 import React from 'react'
 import './Sidebar.css'
-import CreateIcon from '@material-ui/icons/Create'
+import CreateIcon from '@material-ui/icons/EditOutlined'
 import AddIcon from '@material-ui/icons/Add'
 import InboxIcon from '@material-ui/icons/Inbox'
 import { Button, IconButton } from '@material-ui/core'
@@ -8,8 +8,8 @@ import SidebarOptions from './SidebarOptions'
 import StarOutlineIcon from '@material-ui/icons/StarOutline'
 import ScheduleIcon from '@material-ui/icons/Schedule'
 import SendIcon from '@material-ui/icons/Send'
-import DescriptionIcon from '@material-ui/icons/Description'
-import BookmarkIcon from '@material-ui/icons/Bookmark'
+import DescriptionIcon from '@material-ui/icons/DescriptionOutlined'
+import BookmarkIcon from '@material-ui/icons/Label'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 function Sidebar() {
@@ -41,7 +41,11 @@ function Sidebar() {
           </IconButton>
         </div>
 
-        <SidebarOptions Icon={BookmarkIcon} title="Unroll.me" />
+        <SidebarOptions
+          className="label_icon"
+          Icon={BookmarkIcon}
+          title="Unroll.me"
+        />
       </div>
     </div>
   )

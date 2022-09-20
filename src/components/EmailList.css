@@ -24,6 +24,7 @@
 }
 .emailList__settingsRight > span {
   font-size: 0.75rem;
+  white-space: nowrap;
   color: #5e5e5e;
 }
 .emailList__sections {
