@@ -1,8 +1,29 @@
 @font-face {
   font-family: Google Sans;
-  src: url('./utils/GoogleSans-Regular.ttf');
+  src: url('./utils/ProductSans-Bold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Google Sans;
+  src: url('./utils/ProductSans-Medium.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Google Sans;
+  src: url('./utils/ProductSans-Regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Google Sans;
+  src: url('./utils/ProductSans-Light.woff') format('woff');
   font-weight: 300;
 }
+@font-face {
+  font-family: Google Sans;
+  src: url('./utils/ProductSans-Thin.woff') format('woff');
+  font-weight: 100;
+}
+
 * {
   margin: 0;
 }

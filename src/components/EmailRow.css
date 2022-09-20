@@ -28,13 +28,14 @@
 .emailRow__title {
   margin-left: 0.75rem;
   font-size: 0.875rem;
+  font-weight: 500;
   flex: 0.2;
   white-space: nowrap;
 }
 .emailRow__time {
   font-size: 0.75rem;
   padding-right: 1rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .emailRow__message {
   display: flex;
@@ -45,6 +46,8 @@
 .emailRow__message > h4 {
   white-space: nowrap;
   padding-left: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 .emailRow__message > span {
   width: 20.5rem;

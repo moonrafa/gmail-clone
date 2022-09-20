@@ -20,7 +20,7 @@
   margin-left: 0.5rem;
 }
 .emailList__settingsLeft .PrivateSwitchBase-root-1 {
-  margin-right: -29px;
+  margin-right: -29px !important;
 }
 .emailList__settingsRight > span {
   font-size: 0.75rem;
