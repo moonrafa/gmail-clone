@@ -1,8 +1,8 @@
 import React from 'react'
+import { useForm } from 'react-hook-form'
 import './SendMail.css'
-import MinimizeIcon from '@material-ui/icons/Minimize'
 import CloseIcon from '@material-ui/icons/Close'
-import { Button } from '@material-ui/core'
+import { Button, IconButton } from '@material-ui/core'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 import FormatColorTextIcon from '@material-ui/icons/FormatColorText'
 
@@ -11,16 +11,22 @@ function SendMail() {
     <div className="sendMail">
       <div className="sendMail__header">
         <h4> New Message </h4>
-        <MinimizeIcon className="sendMail__minimize" />
-        <CloseIcon className="sendMail__close" />
+
+        <IconButton>
+          <CloseIcon className="sendMail__close" />
+        </IconButton>
       </div>
       <form>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
+        <input placeholder="To" type="text" />
+        <input type="text" placeholder="Subject" />
+        <input
+          placeholder="Message"
+          type="text"
+          className="sendMail__message"
+        />
       </form>
       <div className="sendMail__options">
-        <Button>
+        <Button variant="contained" type="submit">
           Send <ArrowDropDownIcon />
         </Button>
         <FormatColorTextIcon />

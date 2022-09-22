@@ -6,6 +6,7 @@
 - React Router
 - Redux
 - Firebase
+- React Hook Form
 - Material UI
 - CSS
 

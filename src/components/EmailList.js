@@ -62,6 +62,12 @@ function EmailList() {
           description="Fatura paga com sucesso Fatura paga com sucesso... "
           time="12:39 PM"
         />
+        <EmailRow
+          from="Nubank"
+          subject="Pagamento de fatura realizado com sucesso"
+          description="Fatura paga com sucesso Fatura paga com sucesso... "
+          time="12:39 PM"
+        />
       </div>
     </div>
   )

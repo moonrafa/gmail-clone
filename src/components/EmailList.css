@@ -2,7 +2,6 @@
   flex: 1;
   background-color: #fff;
   border-radius: 1rem;
-  overflow: scroll;
 }
 .emailList__settings {
   display: flex;
@@ -33,4 +32,7 @@
   position: sticky;
   z-index: 998;
   border-bottom: 1px solid whitesmoke;
+}
+.emailList__list {
+  overflow-y: scroll;
 }
