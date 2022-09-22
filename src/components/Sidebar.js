@@ -11,13 +11,18 @@ import SendIcon from '@material-ui/icons/Send'
 import DescriptionIcon from '@material-ui/icons/DescriptionOutlined'
 import BookmarkIcon from '@material-ui/icons/Label'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
+import { useDispatch } from 'react-redux'
+import { OpenSendMessage } from '../features/mailSlice'
 
 function Sidebar() {
+  const dispatch = useDispatch()
+
   return (
     <div className="sidebar">
       <Button
         startIcon={<CreateIcon fontSize="large" />}
         className="sidebar__compose"
+        onClick={() => dispatch(OpenSendMessage())}
       >
         Compose
       </Button>

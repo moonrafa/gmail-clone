@@ -55,8 +55,19 @@
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .sendMail__message {
   flex: 1;
+}
+.sendMail__error {
+  background-color: white;
+  color: red;
+  text-align: right;
+  padding: 2px;
+  font-size: 0.75rem;
+}
+.sendMail__error > span {
+  font-weight: 700;
+  text-align: left;
 }
