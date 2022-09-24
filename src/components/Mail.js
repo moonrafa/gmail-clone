@@ -19,9 +19,13 @@ import PrintIcon from '@material-ui/icons/Print'
 import OpenInNewIcon from '@material-ui/icons/OpenInNew'
 import StarOutlineIcon from '@material-ui/icons/StarOutline'
 import TurnLeftIcon from '@material-ui/icons/Redo'
+import { useSelector } from 'react-redux'
+import { selectOpenMail } from '../features/mailSlice'
 
 function Mail() {
   const navigate = useNavigate()
+  const selectedMail = useSelector(selectOpenMail)
+  const name = selectedMail.from.substring(0, selectedMail.from.indexOf('@'))
   return (
     <div className="mail">
       <div className="mail__tools">
@@ -91,7 +95,7 @@ function Mail() {
       <div className="mail__content">
         <div className="mail__title">
           <div className="flex">
-            <p> Pagamento de boleto realizado com sucesso</p>
+            <p>{selectedMail?.subject}</p>
             <IconButton>
               <LabelImportantIcon className="mail__important" />
             </IconButton>
@@ -111,11 +115,11 @@ function Mail() {
         <div className="mail__body">
           <div className="mail__body__header">
             <div className="mail__body__headerLeft">
-              <h4>Nubank </h4>
-              <span> &lt;todomundo@nubank.com.br&gt; </span>
+              <h4> {name} </h4>
+              <span> &lt;{selectedMail?.from}&gt; </span>
             </div>
             <div className="mail__body__headerRight">
-              <p>Sep 5, 2022, 7:55 PM</p>
+              <p>{selectedMail?.time}</p>
               <IconButton>
                 <StarOutlineIcon />
               </IconButton>
@@ -127,12 +131,7 @@ function Mail() {
               </IconButton>
             </div>
           </div>
-          <div className="mail__message">
-            Olá, Rafaelly Seu pagamento de R$ 927,30 foi confirmado. Valor R$
-            927,30 Para conhecer a grade horária para pagamento de boletos
-            através da sua conta do Nubank, acesse nossa página de "Dúvidas
-            frequentes" dentro da opção "Me ajuda" do seu app.
-          </div>
+          <div className="mail__message">{selectedMail?.description}</div>
           <div className="mail__buttons">
             <Button
               startIcon={<TurnLeftIcon className="reply" fontSize="large" />}

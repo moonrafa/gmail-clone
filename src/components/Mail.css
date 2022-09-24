@@ -87,6 +87,7 @@
   align-items: center;
 }
 .mail__body__headerLeft > h4 {
+  text-transform: capitalize;
   font-size: 0.875rem;
   padding-right: 0.3125rem;
 }

@@ -4,11 +4,20 @@ import LabelImportantOutlinedIcon from '@material-ui/icons/LabelImportantOutline
 import React from 'react'
 import './EmailRow.css'
 import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { SelectMail } from '../features/mailSlice'
 
 function EmailRow({ id, from, subject, description, time }) {
   const navigate = useNavigate()
+  const dispatch = useDispatch()
+  const openMail = () => {
+    dispatch(SelectMail({ id, from, subject, description, time }))
+
+    navigate('/mail')
+  }
+  const name = from.substring(0, from.indexOf('@'))
   return (
-    <div onClick={() => navigate('/mail')} className="emailRow">
+    <div onClick={openMail} className="emailRow">
       <div className="emailRow__options">
         <Checkbox />
         <IconButton>
@@ -18,7 +27,7 @@ function EmailRow({ id, from, subject, description, time }) {
           <LabelImportantOutlinedIcon />
         </IconButton>
       </div>
-      <h4 className="emailRow__title">{from}</h4>
+      <h4 className="emailRow__title">{name}</h4>
       <div className="emailRow__message">
         <h4>{subject}</h4>
         <span className="emailRow__description"> - {description}</span>

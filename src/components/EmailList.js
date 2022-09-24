@@ -73,12 +73,13 @@ function EmailList() {
             from={to}
             subject={subject}
             description={message}
-            time={new Date(timestamp?.seconds * 1000)
-              .toUTCString()
-              .toLocaleString('en-US', { hour: 'numeric', hour12: true })}
+            time={new Date(timestamp?.seconds * 1000).toLocaleTimeString(
+              'en-US',
+              { hour: 'numeric', minute: 'numeric', hour12: true }
+            )}
           />
         ))}
-        <EmailRow
+        {/* <EmailRow
           from="Nubank"
           subject="Pagamento de fatura realizado com sucesso"
           description="Fatura paga com sucesso Fatura paga com sucesso... "
@@ -89,7 +90,7 @@ function EmailList() {
           subject="Pagamento de fatura realizado com sucesso"
           description="Fatura paga com sucesso Fatura paga com sucesso... "
           time="12:39 PM"
-        />
+        /> */}
       </div>
     </div>
   )
