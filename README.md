@@ -12,13 +12,17 @@
 
 ## Demo
 
-- home
-
-  <img src="src/utils/demo1.png" alt="gmail home">
-
 - login page
 
-  <img src="src/utils/demo2.png" alt="gmail login">
+  <img src="src/utils/login-demo-png.png" alt="gmail login">
+
+- inbox
+
+  <img src="src/utils/inbox-demo.png" alt="gmail home">
+
+- mail
+
+  <img src="src/utils/mail-demo.png" alt="mail">
 
 ## Author
 

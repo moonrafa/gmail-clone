@@ -12,3 +12,20 @@
   object-fit: contain;
   height: 4rem;
 }
+.login__container > button {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  background-color: white;
+  color: gray;
+  cursor: pointer;
+  box-shadow: 1px 5px 7px 0px rgba(0, 0, 0, 0.26);
+  justify-content: space-evenly;
+  border: 1px solid whitesmoke;
+  height: 3rem;
+  border-radius: 2rem;
+}
+.login__container > button:hover {
+  opacity: 0.7;
+}

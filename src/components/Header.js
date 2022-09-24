@@ -14,6 +14,7 @@ import { auth } from '../firebase'
 
 function Header() {
   const user = useSelector(selectUser)
+  const pic = user.photoUrl
   const dispatch = useDispatch()
   const signOut = () => {
     auth.signOut().then(() => {
@@ -46,7 +47,7 @@ function Header() {
           <AppsIcon />
         </IconButton>
 
-        <Avatar className="pointer" onClick={signOut} src={user?.photoUrl} />
+        <Avatar src={pic} className="pointer" onClick={signOut} />
       </div>
     </div>
   )
